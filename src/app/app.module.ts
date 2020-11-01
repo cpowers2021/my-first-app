@@ -4,11 +4,13 @@ import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { FormsModule } from '@angular/forms';
+import { TypingGameComponent } from './typing-game/typing-game.component';
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
-    ServersComponent
+    ServersComponent,
+    TypingGameComponent
   ],
   imports: [
     BrowserModule,
