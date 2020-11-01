@@ -5,6 +5,11 @@
 <button class="btn btn-primary" [disabled]="!allowNewServer"
 (click)="onCreateServer()">Add Server</button>
 <!--<p [innerText]="allowNewServer"></p>-->
-<p>{{ serverCreationStatus }}</p>
+<!--<p>{{ serverCreationStatus }}</p>-->
+<p *ngIf="serverCreated">Server was created, and the server name is {{ serverName }}</p>
+<!--<p *ngIf="serverCreated; else noServer">Server was created, and the server name is {{ serverName }}</p>--> <!--if block-->
+<!--<ng-template #noServer>
+  <p>No server was created.</p>
+</ng-template>--> <!--else block-->
 <app-server></app-server>
 <app-server></app-server> <!--prints the server component html twice-->
